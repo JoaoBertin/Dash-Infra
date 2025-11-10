@@ -1,0 +1,45 @@
+/* Remove completamente margens e padding do container principal */
+.block-container {
+    padding: 0 0 10dvh 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Remove o cabeçalho padrão do Streamlit */
+[data-testid="stHeader"] {
+    height: 0rem;
+    background: none;
+}
+
+/* Remove padding superior e inferior da área de visualização */
+[data-testid="stAppViewContainer"] {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+/* Remove o espaçamento lateral da área principal (onde a sidebar atua) */
+[data-testid="stMainBlockContainer"] {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+/* Remove margem e padding da main */
+.main {
+    padding: 0;
+    margin: 0;
+}
+
+/* Faz o fundo da página preencher toda a viewport */
+html, body, [data-testid="stAppViewContainer"] {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* Cabeçalho ocupa 100% real da tela */
+header {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
